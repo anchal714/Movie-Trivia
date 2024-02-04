@@ -1,0 +1,23 @@
+﻿@model IEnumerable<MovieList.Models.Movie>
+
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="row movie-content">
+    @foreach (var item in Model)
+    {
+    <div class="col-sm-3 col-sm-offset-1 movie-box text-center">
+        <img class="img-responsive img-thumbnail" width="125" height="125"
+             src="@item.Thumbnail" />
+        <div class="text-center">
+            <h4>Name : @item.Name</h4>
+        </div>
+        <div class="text-center">
+            <h4>Release Year : @item.ReleaseDate</h4>
+        </div>
+    </div>    
+    }
+</div>

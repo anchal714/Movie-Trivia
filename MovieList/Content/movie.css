@@ -1,0 +1,9 @@
+﻿.movie-content {
+    margin-top: 20px;
+}
+.movie-box {
+    border: 1px solid #f0efef;
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5)   !important;
+    margin-top: 5px;
+}
